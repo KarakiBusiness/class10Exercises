@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container">
+<h1>Create Event</h1>
+<header th:replace="fragments :: header"></header>
+
+<form method="post" action="/events/create">
+    <input type="text" name="eventName", class="form-control">
+    <input type="submit" value="Create", class="btn btn-success">
+</form>
+
+</body>
+</html>
